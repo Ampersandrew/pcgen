@@ -9,7 +9,7 @@ CLASS:Republic Ranger	PREABILITY:2,CATEGORY=FEAT,Force of Law,Weapon Focus	PREMU
 CLASS:Republic Ranger	STARTSKILLPTS:4	CSKILL:Bluff|Climb|Computer Use|Demolitions|Diplomacy|Drive|Gather Information|Intimidate|Investigate|Jump|Knowledge (Civics)|Knowledge (History)|Knowledge (Local)|Knowledge (Streetwise)|Knowledge (Tactics)|Listen|Navigate|Ride|Search|Sense Motive|Sleight of Hand|Spot|Survival|Swim|Treat Injury
 1	SAB:Ranger Reputation						ADD:ABILITY|Special Ability|NORMAL|TYPE=WordLaw
 2										ADD:ABILITY|Special Ability|NORMAL|Region Familiarity	ADD:ABILITY|FEAT|VIRTUAL|Frightful Presence
-3	SAB:Posse								ADD:ABILITY|Special Ability|NORMAL|Greater Weapon Focus
+3	SAB:Posse								BONUS:ABILITYPOOL|Greater Weapon Focus|1
 4	SAB:Improved Region Familiarity	SAB:Chosen Quarry
 5	SAB:Shield of the Law
 
