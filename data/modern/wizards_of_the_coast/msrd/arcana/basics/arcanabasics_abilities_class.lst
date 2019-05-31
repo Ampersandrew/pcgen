@@ -1,168 +1,236 @@
-# CVS $Revision$ $Author$ -- Tue Dec 15 01:48:08 2015 -- reformated by PCGen PrettyLST v6.06.00
+# Fri May 31 14:31:43 2019 -- reformatted by PCGen TidyLst v1.04.00
 SOURCELONG:Modern System Reference Document	SOURCESHORT:MSRD	SOURCEWEB:http://www.wizards.com/D20/article.asp?x=msrd	SOURCEDATE:2002-01
 
-###Block:Arcane Arranger Class Features
-# Ability Name		Unique Key							Category of Ability		Type											Define				Description
-Expert in Your Field	KEY:Arcane Arranger ~ Expert in Your Field	CATEGORY:Special Ability	TYPE:SpecialQuality.Arcane Arranger Class Feature.Class Feature						DESC:You are considered a master of connections, such that your reputation precedes you in your dealings with others. You gain a circumstance bonus equal to your Reputation bonus when making skill checks that are directly involved with Gather Information and Diplomacy skills. In addition, your may add your Reputation bonus on Wealth checks for new purchases.
-False Allegiance		KEY:Arcane Arranger ~ False Allegiance		CATEGORY:Special Ability	TYPE:SpecialQuality.Arcane Arranger Class Feature.Class Feature						DESC:You fit in with whatever group you choose to be with. You can successfully emulate an allegiance you know about. You gain the +2 circumstance bonus on Charisma-based skills when dealing with an individual of the same allegiance.  The allegiance and its bonus is considered in effect until a check is failed, at which point the false allegiance is revealed.  Supernatural and spell-like abilities that determine allegiance are not affected by your false allegiance ability.
-Pack Rat			KEY:Arcane Arranger ~ Pack Rat			CATEGORY:Special Ability	TYPE:SpecialQuality.Arcane Arranger Class Feature.Class Feature						DESC:You are considered to have considerable material resources either at hand or easily and cheaply acquired. When making a Wealth check to determine if a particular item is "at hand," add your Arcane Arranger class levels as a circumstance bonus.
-Shadow Resources		KEY:Arcane Arranger ~ Shadow Resources		CATEGORY:Special Ability	TYPE:SpecialQuality.Arcane Arranger Class Feature.Class Feature						DESC:You are well-enough wired into the social system to be able to get the names and numbers of individuals with particular abilities and talents. Even if away from your home stomping ground a phone call can produce a contact with the needed resource. Make a level check, adding all Arcane Arranger levels and any levels of Charismatic Hero. &nl;The difficulty of this task is based on how common the required abilities are: &nl;Common Skill (Ride, Pilot, Treat Injury) DC 10 &nl;Uncommon Skill (subgroups of other skills such as Knowledge (arcane lore) or Craft (structural)) DC 15 &nl;Rare Skill (skills available for a particular class-Spellcraft, Psicraft, Use Magic Device) DC 20 &nl;Specific Feat DC 20 &nl;Class Feature (spellcasting, turn undead, psionics) DC 20 &nl;Specific Combination of Skills, Feats, and Abilities (someone with Knowledge (business) and the ability to cast the auguryspell) DC 25 &nl;Finding someone willing to perform activities secretly or illegally DC +5 &nl;Finding someone with a specific level of ability Add desired ranks to DC A successful check indicates that the individual is available, and you know about him. It does not guarantee the character contacted will be willing to perform the requested service-the party requesting the service must still negotiate for that person's services. &nl;An unsuccessful check means that no such individual is immediately known or available to you. This does not negate trying again for a different skill, nor from trying to locate a skill resource through more traditional methods. The resource you know about will have total ranks in the needed skill of at least your total character level +3.
-Up My Sleeve		KEY:Arcane Arranger ~ Up My Sleeve			CATEGORY:Special Ability	TYPE:SpecialQuality.Arcane Arranger Class Feature.Class Feature	DEFINE:ArcaneArrangerLVL|0	DESC:You gain the supernatural ability to pull a specific item out of thin air. As a move action, you may cause	DESC: any item currently in your possession (with a size no greater than Small)|PREVARLT:ArcaneArrangerLVL,10	DESC: a single object currently in your possession of up to Large size or up to three objects of up to Small size (each of which may be retrieved individually)|PREVARGTEQ:ArcaneArrangerLVL,10	DESC: to disappear into an extra-dimensional space. The item becomes impossible to detect by any means, however detect magical aura spells will reveal a moderate magical aura around the hand that last held the item. As a move action, you can cause any of the items to reappear in your hand.	DESC:You may only hide one item at a time in this fashion.|PREVARLT:ArcaneArrangerLVL,10
-Word on the Street	KEY:Arcane Arranger ~ Word on the Street		CATEGORY:Special Ability	TYPE:SpecialQuality.Arcane Arranger Class Feature.Class Feature						DESC:You filter information constantly and remember everything. Through regular contacts, gossip, internet chats, and other situations, you have a deep knowledge of everyday things. You can make a Gather Information check on general or specific information instantaneously, and spend only an hour making a Gather Information check for restricted information. Retries may be made under normal rules.  Protected information still requires 1d4+1 hours for a check.  The purchase DC for using Gather Information is reduced by 10.
+#-----------------------
+# Arcane Arranger
+#-----------------------
+
+###Block:Arcane Arranger
+# Ability Name		Unique Key					Category of Ability		Type										Define				Description
+Expert in Your Field	KEY:Arcane Arranger ~ Expert in Your Field	CATEGORY:Special Ability	TYPE:SpecialQuality.Arcane Arranger Class Feature.Class Feature							DESC:You are considered a master of connections, such that your reputation precedes you in your dealings with others. You gain a circumstance bonus equal to your Reputation bonus when making skill checks that are directly involved with Gather Information and Diplomacy skills. In addition, your may add your Reputation bonus on Wealth checks for new purchases.
+False Allegiance	KEY:Arcane Arranger ~ False Allegiance		CATEGORY:Special Ability	TYPE:SpecialQuality.Arcane Arranger Class Feature.Class Feature							DESC:You fit in with whatever group you choose to be with. You can successfully emulate an allegiance you know about. You gain the +2 circumstance bonus on Charisma-based skills when dealing with an individual of the same allegiance.  The allegiance and its bonus is considered in effect until a check is failed, at which point the false allegiance is revealed.  Supernatural and spell-like abilities that determine allegiance are not affected by your false allegiance ability.
+Pack Rat		KEY:Arcane Arranger ~ Pack Rat			CATEGORY:Special Ability	TYPE:SpecialQuality.Arcane Arranger Class Feature.Class Feature							DESC:You are considered to have considerable material resources either at hand or easily and cheaply acquired. When making a Wealth check to determine if a particular item is "at hand," add your Arcane Arranger class levels as a circumstance bonus.
+Shadow Resources	KEY:Arcane Arranger ~ Shadow Resources		CATEGORY:Special Ability	TYPE:SpecialQuality.Arcane Arranger Class Feature.Class Feature							DESC:You are well-enough wired into the social system to be able to get the names and numbers of individuals with particular abilities and talents. Even if away from your home stomping ground a phone call can produce a contact with the needed resource. Make a level check, adding all Arcane Arranger levels and any levels of Charismatic Hero. &nl;The difficulty of this task is based on how common the required abilities are: &nl;Common Skill (Ride, Pilot, Treat Injury) DC 10 &nl;Uncommon Skill (subgroups of other skills such as Knowledge (arcane lore) or Craft (structural)) DC 15 &nl;Rare Skill (skills available for a particular class-Spellcraft, Psicraft, Use Magic Device) DC 20 &nl;Specific Feat DC 20 &nl;Class Feature (spellcasting, turn undead, psionics) DC 20 &nl;Specific Combination of Skills, Feats, and Abilities (someone with Knowledge (business) and the ability to cast the auguryspell) DC 25 &nl;Finding someone willing to perform activities secretly or illegally DC +5 &nl;Finding someone with a specific level of ability Add desired ranks to DC A successful check indicates that the individual is available, and you know about him. It does not guarantee the character contacted will be willing to perform the requested service-the party requesting the service must still negotiate for that person's services. &nl;An unsuccessful check means that no such individual is immediately known or available to you. This does not negate trying again for a different skill, nor from trying to locate a skill resource through more traditional methods. The resource you know about will have total ranks in the needed skill of at least your total character level +3.
+Up My Sleeve		KEY:Arcane Arranger ~ Up My Sleeve		CATEGORY:Special Ability	TYPE:SpecialQuality.Arcane Arranger Class Feature.Class Feature.Supernatural	DEFINE:ArcaneArrangerLVL|0	DESC:You gain the supernatural ability to pull a specific item out of thin air. As a move action, you may cause	DESC: any item currently in your possession (with a size no greater than Small)|PREVARLT:ArcaneArrangerLVL,10	DESC: a single object currently in your possession of up to Large size or up to three objects of up to Small size (each of which may be retrieved individually)|PREVARGTEQ:ArcaneArrangerLVL,10	DESC: to disappear into an extra-dimensional space. The item becomes impossible to detect by any means, however detect magical aura spells will reveal a moderate magical aura around the hand that last held the item. As a move action, you can cause any of the items to reappear in your hand.	DESC:You may only hide one item at a time in this fashion.|PREVARLT:ArcaneArrangerLVL,10
+Word on the Street	KEY:Arcane Arranger ~ Word on the Street	CATEGORY:Special Ability	TYPE:SpecialQuality.Arcane Arranger Class Feature.Class Feature							DESC:You filter information constantly and remember everything. Through regular contacts, gossip, internet chats, and other situations, you have a deep knowledge of everyday things. You can make a Gather Information check on general or specific information instantaneously, and spend only an hour making a Gather Information check for restricted information. Retries may be made under normal rules.  Protected information still requires 1d4+1 hours for a check.  The purchase DC for using Gather Information is reduced by 10.
+
+
+#-----------------------
+# Archaic Weaponsmaster
+#-----------------------
 
 ###Block:Archaic Weaponsmaster
-# Ability Name		Unique Key								Category of Ability		Type												Define				Description																																																								Modify VAR									Benefits
-Expert in Your Field	KEY:Archaic Weaponsmaster ~ Expert in Your Field	CATEGORY:Special Ability	TYPE:SpecialQuality.Archaic Weaponsmaster Class Feature.Class Feature						DESC:You are considered to be a master of your particular weapon.  You gain a circumstance bonus equal to your Reputation bonus on skill checks that are directly involved with your knowledge and proficiency with the weapon. Such skills would include applicable Knowledge skills, as well as such social skills such as Intimidate and Bluff.											BENEFIT:At 5th level, the Archaic Weaponsmaster is considered to be a master of her particular weapon, whether this is as a scholar with a detailed knowledge of the weapon’s history, or as a practitioner, such as a professional archer. Starting with 5th level, the Archaic Weaponsmaster gains a circumstance bonus equal to her Reputation bonus on skill checks that are directly involved with her knowledge and proficiency with the weapon. Such skills would include applicable Knowledge skills, as well as such social skills as Intimidate and Bluff.
-Imbue Weapon		KEY:Archaic Weaponsmaster ~ Imbue Weapon			CATEGORY:Special Ability	TYPE:SpecialQuality.Archaic Weaponsmaster Class Feature.Class Feature	DEFINE:ImbueWeaponBonus|0	DESC:Treat any archaic weapon you have Weapon Focus with as if it had a +%1 for overcoming damage reduction.|ImbueWeaponBonus																																					BONUS:VAR|ImbueWeaponBonus|(ArchaicWeaponsmasterLVL+4)/6	BENEFIT:The Archaic Weaponsmaster may treat any archaic weapon she wields and has Weapon Focus with as a +%1 magic weapon for purposes of striking creatures with damage reduction. This does not grant the weapon a +%1 bonus, but only allows it to circumvent damage reduction.|ImbueWeaponBonus
-Quick Weapon Draw		KEY:Archaic Weaponsmaster ~ Quick Weapon Draw		CATEGORY:Special Ability	TYPE:SpecialQuality.Archaic Weaponsmaster Class Feature.Class Feature						DESC:You gain the ability to draw your weapon as a free action. This applies only to the weapons for which you have Weapon Specialization.																																												BENEFIT:At 4th level, the Archaic Weaponsmaster gains the ability to draw her weapon as a free action. This applies only to the weapons for which the Archaic Weaponsmaster has Weapon Specialization.
-Weapon Stun			KEY:Archaic Weaponsmaster ~ Weapon Stun			CATEGORY:Special Ability	TYPE:SpecialQuality.Archaic Weaponsmaster Class Feature.Class Feature						DESC:Deal nonlethal damage with any weapon for which you have weapon specialisation, without taking the -4 penalty on attack rolls.																																														BENEFIT:At 7th level, the Archaic Weaponsmaster can use his or her weapon to deal nonlethal damage, without taking the -4 penalty on attack rolls. The Archaic Weaponsmaster must have Weapon Specialization in the weapon to use it in this fashion.
+# Ability Name		Unique Key						Category of Ability		Type									Define				Description																																										Modify VAR							Benefits
+Expert in Your Field	KEY:Archaic Weaponsmaster ~ Expert in Your Field	CATEGORY:Special Ability	TYPE:SpecialQuality.Archaic Weaponsmaster Class Feature.Class Feature					DESC:You are considered to be a master of your particular weapon.  You gain a circumstance bonus equal to your Reputation bonus on skill checks that are directly involved with your knowledge and proficiency with the weapon. Such skills would include applicable Knowledge skills, as well as such social skills such as Intimidate and Bluff.									BENEFIT:At 5th level, the Archaic Weaponsmaster is considered to be a master of her particular weapon, whether this is as a scholar with a detailed knowledge of the weapon’s history, or as a practitioner, such as a professional archer. Starting with 5th level, the Archaic Weaponsmaster gains a circumstance bonus equal to her Reputation bonus on skill checks that are directly involved with her knowledge and proficiency with the weapon. Such skills would include applicable Knowledge skills, as well as such social skills as Intimidate and Bluff.
+Imbue Weapon		KEY:Archaic Weaponsmaster ~ Imbue Weapon		CATEGORY:Special Ability	TYPE:SpecialQuality.Archaic Weaponsmaster Class Feature.Class Feature	DEFINE:ImbueWeaponBonus|0	DESC:Treat any archaic weapon you have Weapon Focus with as if it had a +%1 for overcoming damage reduction.|ImbueWeaponBonus																												BONUS:VAR|ImbueWeaponBonus|(ArchaicWeaponsmasterLVL+4)/6	BENEFIT:The Archaic Weaponsmaster may treat any archaic weapon she wields and has Weapon Focus with as a +%1 magic weapon for purposes of striking creatures with damage reduction. This does not grant the weapon a +%1 bonus, but only allows it to circumvent damage reduction.|ImbueWeaponBonus
+Quick Weapon Draw	KEY:Archaic Weaponsmaster ~ Quick Weapon Draw		CATEGORY:Special Ability	TYPE:SpecialQuality.Archaic Weaponsmaster Class Feature.Class Feature					DESC:You gain the ability to draw your weapon as a free action. This applies only to the weapons for which you have Weapon Specialization.																																		BENEFIT:At 4th level, the Archaic Weaponsmaster gains the ability to draw her weapon as a free action. This applies only to the weapons for which the Archaic Weaponsmaster has Weapon Specialization.
+Weapon Stun		KEY:Archaic Weaponsmaster ~ Weapon Stun			CATEGORY:Special Ability	TYPE:SpecialQuality.Archaic Weaponsmaster Class Feature.Class Feature					DESC:Deal nonlethal damage with any weapon for which you have weapon specialisation, without taking the -4 penalty on attack rolls.																																			BENEFIT:At 7th level, the Archaic Weaponsmaster can use his or her weapon to deal nonlethal damage, without taking the -4 penalty on attack rolls. The Archaic Weaponsmaster must have Weapon Specialization in the weapon to use it in this fashion.
 
 
+#-----------------------
+# Glamourist
+#-----------------------
 
 ###Block:Glamourist
-# Ability Name		Unique Key					Category of Ability		Type										Visible	Special ABility
+# Ability Name		Unique Key				Category of Ability		Type								Visible		Special ABility
 Self Confidence		KEY:Glamourist ~ Self Confidence	CATEGORY:Special Ability	TYPE:SpecialQuality.GlamouristClass Feature.Class Feature	VISIBLE:NO	SAB:Self Confidence
-Hidden Motives		KEY:Glamourist ~ Hidden Motives	CATEGORY:Special Ability	TYPE:SpecialQuality.GlamouristClass Feature.Class Feature	VISIBLE:NO	SAB:Hidden Motives
-Hidden Allegiance		KEY:Glamourist ~ Hidden Allegiance	CATEGORY:Special Ability	TYPE:SpecialQuality.GlamouristClass Feature.Class Feature	VISIBLE:NO	SAB:Hidden Allegiance
-Audience			KEY:Glamourist ~ Audience		CATEGORY:Special Ability	TYPE:SpecialQuality.GlamouristClass Feature.Class Feature	VISIBLE:NO	SAB:Audience
-Daze				KEY:Glamourist ~ Daze			CATEGORY:Special Ability	TYPE:SpecialQuality.GlamouristClass Feature.Class Feature	VISIBLE:NO	SAB:Daze
+Hidden Motives		KEY:Glamourist ~ Hidden Motives		CATEGORY:Special Ability	TYPE:SpecialQuality.GlamouristClass Feature.Class Feature	VISIBLE:NO	SAB:Hidden Motives
+Hidden Allegiance	KEY:Glamourist ~ Hidden Allegiance	CATEGORY:Special Ability	TYPE:SpecialQuality.GlamouristClass Feature.Class Feature	VISIBLE:NO	SAB:Hidden Allegiance
+Audience		KEY:Glamourist ~ Audience		CATEGORY:Special Ability	TYPE:SpecialQuality.GlamouristClass Feature.Class Feature	VISIBLE:NO	SAB:Audience
+Daze			KEY:Glamourist ~ Daze			CATEGORY:Special Ability	TYPE:SpecialQuality.GlamouristClass Feature.Class Feature	VISIBLE:NO	SAB:Daze
 Utterly Convincing	KEY:Glamourist ~ Utterly Convincing	CATEGORY:Special Ability	TYPE:SpecialQuality.GlamouristClass Feature.Class Feature	VISIBLE:NO	SAB:Utterly Convincing
 Charm Person		KEY:Glamourist ~ Charm Person		CATEGORY:Special Ability	TYPE:SpecialQuality.GlamouristClass Feature.Class Feature	VISIBLE:NO	SAB:Charm Person
 
 
-###Block:Mystic ---------------------------------------------------------------------------------------------------------------------------------
-# Ability Name	Unique Key				Category of Ability		Type										Visible	Special ABility
+#-----------------------
+# Mystic
+#-----------------------
+
+###Block:Mystic
+# Ability Name	Unique Key			Category of Ability		Type							Visible		Special ABility
 Combat Casting	KEY:Mystic ~ Combat Casting	CATEGORY:Special Ability	TYPE:SpecialQuality.Mystic Class Feature.Class Feature	VISIBLE:NO	SAB:Combat Casting
 
 
-###Block:Shadow Hunter ---------------------------------------------------------------------------------------------------------------------------------
-# Ability Name		Unique Key						Category of Ability		Type				Visible	Special ABility				Define
-Target Bonus		KEY:Shadow Hunter ~ Target Bonus		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Target Bonus +%|TargetBonus	DEFINE:TargetBonus|0
-Swift Track			KEY:Shadow Hunter ~ Swift Track		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Swift Track
-No Trace			KEY:Shadow Hunter ~ No Trace			CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:No Trace
-Play a Hunch		KEY:Shadow Hunter ~ Play a Hunch		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Play a Hunch
+#-----------------------
+# Shadow Hunter
+#-----------------------
+
+###Block:Shadow Hunter
+# Ability Name		Unique Key				Category of Ability		Type			Visible		Special ABility			Define
+Target Bonus		KEY:Shadow Hunter ~ Target Bonus	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Target Bonus +%|TargetBonus	DEFINE:TargetBonus|0
+Swift Track		KEY:Shadow Hunter ~ Swift Track		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Swift Track
+No Trace		KEY:Shadow Hunter ~ No Trace		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:No Trace
+Play a Hunch		KEY:Shadow Hunter ~ Play a Hunch	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Play a Hunch
 Detect Magical Aura	KEY:Shadow Hunter ~ Detect Magical Aura	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Detect Magical Aura
-Locate Target		KEY:Shadow Hunter ~ Locate Target		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Locate Target
+Locate Target		KEY:Shadow Hunter ~ Locate Target	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Locate Target
 
 
-###Block:Shadowjack ---------------------------------------------------------------------------------------------------------------------------------
-# Ability Name		Unique Key						Category of Ability		Type				Visible	Special ABility							Define
+#-----------------------
+# Shadowjack
+#-----------------------
+
+###Block:Shadowjack
+# Ability Name		Unique Key					Category of Ability		Type			Visible		Special ABility						Define
 Read/Write Code		KEY:Shadowjack ~ Read Write Code		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Read/Write Code
 Online Presence		KEY:Shadowjack ~ Online Presence		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Online Presence
 Electronic Empathy	KEY:Shadowjack ~ Electronic Empathy		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Electronic Empathy
-Careful Progress		KEY:Shadowjack ~ Careful Progress		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Careful Progress
-False Trail			KEY:Shadowjack ~ False Trail			CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:False Trail
-Install Backdoor		KEY:Shadowjack ~ Install Backdoor		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Install Backdoor
+Careful Progress	KEY:Shadowjack ~ Careful Progress		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Careful Progress
+False Trail		KEY:Shadowjack ~ False Trail			CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:False Trail
+Install Backdoor	KEY:Shadowjack ~ Install Backdoor		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Install Backdoor
 Online Spell Resistance	KEY:Shadowjack ~ Online Spell Resistance	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Online Spell Resistance %|OnlineSpellResistance	DEFINE:OnlineSpellResistance|0
-Improved Degradation	KEY:Shadowjack ~ Improved Degradation	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Improved Degradation
+Improved Degradation	KEY:Shadowjack ~ Improved Degradation		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Improved Degradation
 Passfirewall		KEY:Shadowjack ~ Passfirewall			CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Passfirewall
-Walking Database		KEY:Shadowjack ~ Walking Database		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Walking Database
-Virtual Incantations	KEY:Shadowjack ~ Virtual Incantations	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Virtual Incantations
+Walking Database	KEY:Shadowjack ~ Walking Database		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Walking Database
+Virtual Incantations	KEY:Shadowjack ~ Virtual Incantations		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Virtual Incantations
 
 
-###Block:Speed Demon ---------------------------------------------------------------------------------------------------------------------------------
-# Ability Name		Unique Key						Category of Ability		Type				Visible	Special ABility
-Hit the Weak Spot		KEY:Speed Demon ~ Hit the Weak Spot		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Hit the Weak Spot
-Vehicle Empathy		KEY:Speed Demon ~ Vehicle Empathy		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Vehicle Empathy
-Need for Speed		KEY:Speed Demon ~ Need for Speed		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Need for Speed
-Nursing the Turns		KEY:Speed Demon ~ Nursing the Turns		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Nursing the Turns
-Commandeer			KEY:Speed Demon ~ Commandeer			CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Commandeer
-Leadfoot			KEY:Speed Demon ~ Leadfoot			CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Leadfoot
+#-----------------------
+# Speed Demon
+#-----------------------
+
+###Block:Speed Demon
+# Ability Name		Unique Key				Category of Ability		Type			Visible		Special ABility
+Hit the Weak Spot	KEY:Speed Demon ~ Hit the Weak Spot	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Hit the Weak Spot
+Vehicle Empathy		KEY:Speed Demon ~ Vehicle Empathy	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Vehicle Empathy
+Need for Speed		KEY:Speed Demon ~ Need for Speed	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Need for Speed
+Nursing the Turns	KEY:Speed Demon ~ Nursing the Turns	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Nursing the Turns
+Commandeer		KEY:Speed Demon ~ Commandeer		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Commandeer
+Leadfoot		KEY:Speed Demon ~ Leadfoot		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Leadfoot
 Redlining the Needle	KEY:Speed Demon ~ Redlining the Needle	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Redlining the Needle
-Restore Vehicle		KEY:Speed Demon ~ Restore Vehicle		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Restore Vehicle
+Restore Vehicle		KEY:Speed Demon ~ Restore Vehicle	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Restore Vehicle
 One with the Machine	KEY:Speed Demon ~ One with the Machine	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:One with the Machine
 
 
-###Block:Street Warrior ---------------------------------------------------------------------------------------------------------------------------------
-# Ability Name			Unique Key							Category of Ability		Type				Visible	Special ABility
-Urban Survival			KEY:Street Warrior ~ Urban Survival			CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Urban Survival
+#-----------------------
+# Street Warrior
+#-----------------------
+
+###Block:Street Warrior
+# Ability Name			Unique Key					Category of Ability		Type			Visible		Special ABility
+Urban Survival			KEY:Street Warrior ~ Urban Survival		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Urban Survival
 Improvised Weapons		KEY:Street Warrior ~ Improvised Weapons		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Improvised Weapons
-Street Cred				KEY:Street Warrior ~ Street Cred			CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Street Cred
+Street Cred			KEY:Street Warrior ~ Street Cred		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Street Cred
 Improved Streetfighting		KEY:Street Warrior ~ Improved Streetfighting	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Improved Streetfighting
 Improvised Weapon Damage	KEY:Street Warrior ~ Improvised Weapon Damage	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Improvised Weapon Damage
 Advanced Streetfighting		KEY:Street Warrior ~ Advanced Streetfighting	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Advanced Streetfighting
 
 
-###Block:Swashbuckler ---------------------------------------------------------------------------------------------------------------------------------
-# Ability Name	Unique Key						Category of Ability		Type				Visible	Special ABility		Description
-Deflect Missiles	KEY:Swashbuckler ~ Deflect Missiles		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Deflect Missiles
-Quick Weapon Draw	KEY:Swashbuckler ~ Quick Weapon Draw	CATEGORY:Special Ability	TYPE:SpecialQuality							DESC:You gain the ability to draw your weapon as a free action. This applies only to the weapons for which you have Weapon Focus.
-Touche		KEY:Swashbuckler ~ Touche			CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Touche
+#-----------------------
+# Swashbuckler
+#-----------------------
+
+###Block:Swashbuckler
+# Ability Name		Unique Key				Category of Ability		Type			Visible		Special ABility		Description
+Deflect Missiles	KEY:Swashbuckler ~ Deflect Missiles	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Deflect Missiles
+Quick Weapon Draw	KEY:Swashbuckler ~ Quick Weapon Draw	CATEGORY:Special Ability	TYPE:SpecialQuality						DESC:You gain the ability to draw your weapon as a free action. This applies only to the weapons for which you have Weapon Focus.
+Touche			KEY:Swashbuckler ~ Touche		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Touche
 
 
-###Block:Techno Mage ---------------------------------------------------------------------------------------------------------------------------------
-# Ability Name			Unique Key							Category of Ability		Type								Visible	Special ABility					Multiple?	Choose							Selections	Misc bonus
-Arcane Skills			KEY:Techno Mage ~ Arcane Skills			CATEGORY:Special Ability	TYPE:SpecialQuality					VISIBLE:NO	SAB:Arcane Skills																	BONUS:MISC|SPELLFAILURE|-10|PREMULT:2,[PREABILITY:1,CATEGORY=FEAT,Armor Proficiency (Light)],[PREEQUIP:2,TYPE=Armor,TYPE=Light]	BONUS:MISC|SPELLFAILURE|-10|PREMULT:2,[PREABILITY:1,CATEGORY=FEAT,Armor Proficiency (Medium)],[PREEQUIP:2,TYPE=Armor,TYPE=Medium]	BONUS:MISC|SPELLFAILURE|-10|PREMULT:2,[PREABILITY:1,CATEGORY=FEAT,Armor Proficiency (Heavy)],[PREEQUIP:2,TYPE=Armor,TYPE=Heavy]
-Quicken Spell			KEY:Techno Mage ~ Quicken Spell			CATEGORY:Special Ability	TYPE:SpecialQuality					VISIBLE:NO	SAB:Quicken Spell
-Machine Empathy			KEY:Techno Mage ~ Machine Empathy			CATEGORY:Special Ability	TYPE:SpecialQuality					VISIBLE:NO	SAB:Machine Empathy
-Program Spell			KEY:Techno Mage ~ Program Spell			CATEGORY:Special Ability	TYPE:SpecialQuality					VISIBLE:NO	SAB:Program Spell
-Create Homunculus			KEY:Techno Mage ~ Create Homunculus			CATEGORY:Special Ability	TYPE:SpecialQuality					VISIBLE:NO	SAB:Create Homunculus
-Online Casting			KEY:Techno Mage ~ Online Casting			CATEGORY:Special Ability	TYPE:SpecialQuality					VISIBLE:NO	SAB:Online Casting
+#-----------------------
+# Techno Mage
+#-----------------------
+
+###Block:Techno Mage
+# Ability Name			Unique Key					Category of Ability		Type						Visible		Special ABility					Multiple?	Choose						Selections	Misc bonus
+Arcane Skills			KEY:Techno Mage ~ Arcane Skills			CATEGORY:Special Ability	TYPE:SpecialQuality				VISIBLE:NO	SAB:Arcane Skills														BONUS:MISC|SPELLFAILURE|-10|PREMULT:2,[PREABILITY:1,CATEGORY=FEAT,Armor Proficiency (Light)],[PREEQUIP:2,TYPE=Armor,TYPE=Light]	BONUS:MISC|SPELLFAILURE|-10|PREMULT:2,[PREABILITY:1,CATEGORY=FEAT,Armor Proficiency (Medium)],[PREEQUIP:2,TYPE=Armor,TYPE=Medium]	BONUS:MISC|SPELLFAILURE|-10|PREMULT:2,[PREABILITY:1,CATEGORY=FEAT,Armor Proficiency (Heavy)],[PREEQUIP:2,TYPE=Armor,TYPE=Heavy]
+Quicken Spell			KEY:Techno Mage ~ Quicken Spell			CATEGORY:Special Ability	TYPE:SpecialQuality				VISIBLE:NO	SAB:Quicken Spell
+Machine Empathy			KEY:Techno Mage ~ Machine Empathy		CATEGORY:Special Ability	TYPE:SpecialQuality				VISIBLE:NO	SAB:Machine Empathy
+Program Spell			KEY:Techno Mage ~ Program Spell			CATEGORY:Special Ability	TYPE:SpecialQuality				VISIBLE:NO	SAB:Program Spell
+Create Homunculus		KEY:Techno Mage ~ Create Homunculus		CATEGORY:Special Ability	TYPE:SpecialQuality				VISIBLE:NO	SAB:Create Homunculus
+Online Casting			KEY:Techno Mage ~ Online Casting		CATEGORY:Special Ability	TYPE:SpecialQuality				VISIBLE:NO	SAB:Online Casting
 Arcane Spontaneous Casting	KEY:Techno Mage ~ Arcane Spontaneous Casting	CATEGORY:Special Ability	TYPE:SpecialQuality.ArcaneSpontaneousCasting			SAB:Arcane Spontaneous Casting (%CHOICE)	MULT:YES	CHOOSE:SPELLS|CLASSLIST=Techno Mage[KNOWN=YES]	SELECT:INT
 
 
-###Block:Thrasher ---------------------------------------------------------------------------------------------------------------------------------
-# Ability Name	Unique Key				Category of Ability		Type				Visible	Special ABility	Combat bonus
+#-----------------------
+# Thrasher
+#-----------------------
+
+###Block:Thrasher
+# Ability Name	Unique Key			Category of Ability		Type			Visible		Special ABility		Combat bonus
 Ability Surge	KEY:Thrasher ~ Ability Surge	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Ability Surge
 Tough Defense	KEY:Thrasher ~ Tough Defense	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Tough Defense	BONUS:COMBAT|AC|CON-DEX
 
-###Block:Wildlord ---------------------------------------------------------------------------------------------------------------------------------
-# Ability Name		Unique Key						Category of Ability		Type					Visible		Special ABility			Description																																																													Multiple?	Choose
-Expert in Your Field	KEY:Wildlord ~ Expert in Your Field		CATEGORY:Special Ability	TYPE:SpecialQuality										DESC:You are considered to be a master of nature lore, animals, and plants. You gain a circumstance bonus equal to your Reputation bonus when making skill checks that are directly involved with your knowledge of the natural world. Such skills would include applicable Knowledge skills, as well as social skills such as Intimidate and Bluff when animals are involved.
-Animal Empathy		KEY:Wildlord ~ Animal Empathy			CATEGORY:Special Ability	TYPE:SpecialQuality		VISIBLE:NO		SAB:Animal Empathy
-Animal Companion		KEY:Wildlord ~ Animal Companion		CATEGORY:Special Ability	TYPE:SpecialQuality		VISIBLE:NO		SAB:Animal Companion
-Fast Climb			KEY:Wildlord ~ Fast Climb			CATEGORY:Special Ability	TYPE:SpecialQuality		VISIBLE:NO		SAB:Fast Climb
-Resist Venom		KEY:Wildlord ~ Resist Venom			CATEGORY:Special Ability	TYPE:SpecialQuality		VISIBLE:NO		SAB:Resist Venom
-Call Companion		KEY:Wildlord ~ Call Companion			CATEGORY:Special Ability	TYPE:SpecialQuality		VISIBLE:NO		SAB:Call Companion
-Transform Companion	KEY:Wildlord ~ Transform Companion		CATEGORY:Special Ability	TYPE:SpecialQuality		VISIBLE:NO		SAB:Transform Companion
-Wildlord Skill Mastery	KEY:Wildlord ~ Wildlord Skill Mastery	CATEGORY:Special Ability	TYPE:WildlordSkillMastery	VISIBLE:DISPLAY	SAB:Skill Mastery (%CHOICE)																																																															MULT:YES	CHOOSE:STRING|Climb|Concentration|Diplomacy|Drive|Handle Animal|Hide|Knowledge (Behavioral Sciences)|Knowledge (Earth and Life Sciences)|Knowledge (Physical Sciences)|Move Silently|Navigate|Pilot|Profession|Ride|Spot|Survival|Swim|Treat Injury
+
+#-----------------------
+# Wildlord
+#-----------------------
+
+###Block:Wildlord
+# Ability Name		Unique Key				Category of Ability		Type				Visible		Special ABility			Description																																													Multiple?	Choose
+Expert in Your Field	KEY:Wildlord ~ Expert in Your Field	CATEGORY:Special Ability	TYPE:SpecialQuality								DESC:You are considered to be a master of nature lore, animals, and plants. You gain a circumstance bonus equal to your Reputation bonus when making skill checks that are directly involved with your knowledge of the natural world. Such skills would include applicable Knowledge skills, as well as social skills such as Intimidate and Bluff when animals are involved.
+Animal Empathy		KEY:Wildlord ~ Animal Empathy		CATEGORY:Special Ability	TYPE:SpecialQuality		VISIBLE:NO	SAB:Animal Empathy
+Animal Companion	KEY:Wildlord ~ Animal Companion		CATEGORY:Special Ability	TYPE:SpecialQuality		VISIBLE:NO	SAB:Animal Companion
+Fast Climb		KEY:Wildlord ~ Fast Climb		CATEGORY:Special Ability	TYPE:SpecialQuality		VISIBLE:NO	SAB:Fast Climb
+Resist Venom		KEY:Wildlord ~ Resist Venom		CATEGORY:Special Ability	TYPE:SpecialQuality		VISIBLE:NO	SAB:Resist Venom
+Call Companion		KEY:Wildlord ~ Call Companion		CATEGORY:Special Ability	TYPE:SpecialQuality		VISIBLE:NO	SAB:Call Companion
+Transform Companion	KEY:Wildlord ~ Transform Companion	CATEGORY:Special Ability	TYPE:SpecialQuality		VISIBLE:NO	SAB:Transform Companion
+Wildlord Skill Mastery	KEY:Wildlord ~ Wildlord Skill Mastery	CATEGORY:Special Ability	TYPE:WildlordSkillMastery	VISIBLE:DISPLAY	SAB:Skill Mastery (%CHOICE)																																															MULT:YES	CHOOSE:STRING|Climb|Concentration|Diplomacy|Drive|Handle Animal|Hide|Knowledge (Behavioral Sciences)|Knowledge (Earth and Life Sciences)|Knowledge (Physical Sciences)|Move Silently|Navigate|Pilot|Profession|Ride|Spot|Survival|Swim|Treat Injury
 
 
-###Block: Prestige ----------------------------------------------------------------------------------------------------------------
-#Block:Archmage ---------------------------------------------------------------------------------------------------------------------------------
-# Ability Name		Unique Key					Category of Ability		Type				Visible	Special ABility																																				Define					Caster level
-Total Spellcasting	KEY:Archmage ~ Total Spellcasting	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Total Spellcasting																																									BONUS:CASTERLEVEL|Techno Mage|CL=Mage|PRECLASS:1,Techno Mage=1	BONUS:CASTERLEVEL|Mage|CL=Techno Mage|PRECLASS:1,Mage=1
-Increased Spells		KEY:Archmage ~ Increased Spells	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Increased Spells/Day (base number of arcane spells increase by 1/2 round down)|PREVAREQ:IncreasedSpellsProgression,1	SAB:Increased Spells/Day (double base number of arcane spells)|PREVAREQ:IncreasedSpellsProgression,2	DEFINE:IncreasedSpellsProgression|0
-Gifted Incantations	KEY:Archmage ~ Gifted Incantations	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Gifted Incantations
-Granted Incantations	KEY:Archmage ~ Granted Incantations	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Granted Incantations
+
+########################
+# Prestige
+########################
+
+#-----------------------
+# Archmage
+#-----------------------
+
+###Block:Archmage
+# Ability Name		Unique Key				Category of Ability		Type								Description										Caster level														Benefits
+Total Spellcasting	KEY:Archmage ~ Total Spellcasting	CATEGORY:Special Ability	TYPE:SpecialQuality.Archmage Class Feature.Class Feature	DESC:Count all character caster levels when determining caster level for arcane spells.	BONUS:CASTERLEVEL|Techno Mage|CL=Mage|PRECLASS:1,Techno Mage=1	BONUS:CASTERLEVEL|Mage|CL=Techno Mage|PRECLASS:1,Mage=1	BENEFIT:Count all character caster levels when determining your casting level for arcane spells.
+Increased Spells	KEY:Archmage ~ Increased Spells		CATEGORY:Special Ability	TYPE:SpecialQuality.Archmage Class Feature.Class Feature	DESC:Increase your base number of arcane spells per day.																			BENEFIT:You increase your base number of arcane spells per day	BENEFIT: by one half (round down).|PREVARLTEQ:ArchmageLVL,3	BENEFIT: to a total of twice what you would normally have.|PREVARGT:ArchmageLVL,3	BENEFIT:This increase occurs before modifications for high intelligence or other alterations.
+Gifted Incantations	KEY:Archmage ~ Gifted Incantations	CATEGORY:Special Ability	TYPE:SpecialQuality.Archmage Class Feature.Class Feature	DESC:Spend an action point to gain +1d6 on skill checks to complete an incantation.																BENEFIT:You can spend an action point on an incantation to gain an additional +1d6 on all skill checks to complete the incantation.
+Granted Incantations	KEY:Archmage ~ Granted Incantations	CATEGORY:Special Ability	TYPE:SpecialQuality.Archmage Class Feature.Class Feature	DESC:No penalty for failure during an Incantation.																				BENEFIT:Failure during an Incantation holds no penalty for the Archmage.
+
+#-----------------------
+# Ecclesiarch
+#-----------------------
+
+###Block:Ecclesiarch
+# Ability Name		Unique Key				Category of Ability		Type			Description															Caster level																	Benefits
+Total Spellcasting	KEY:Ecclesiarch ~ Total Spellcasting	CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:Count all character levels when determining the Ecclesiarch's casting level for divine spells.				BONUS:CASTERLEVEL|Acolyte|TL-AcolyteLVL	BONUS:CASTERLEVEL|Mystic|TL-MysticLVL	BONUS:CASTERLEVEL|Holy Unholy Knight|TL-HolyUnholyKnightLVL
+Increased Spells	KEY:Ecclesiarch ~ Increased Spells	CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:You increase the base number of divine spells you may cast per day																										BENEFIT:You increase the base number of divine spells you may cast per day	BENEFIT:by one-half (round down).|PREVARLTEQ:EcclesiarchLVL|3	BENEFIT:to a total of twice what you would normally have.|PREVARGT:EcclesiarchLVL|3	BENEFIT:This increase occurs before modifications for high Wisdom or other alterations.
+Total Turning		KEY:Ecclesiarch ~ Total Turning		CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:Count all character levels when determining the Ecclesiarch's level for attempts to turn, rebuke, or command creatures.
+Innovative Turning	KEY:Ecclesiarch ~ Innovative Turning	CATEGORY:Special Ability	TYPE:SpecialQuality	DESC:When you gain a level, you may spend an action point to alter the creature type you can turn, rebuke, or command.																				BENEFIT:When you gain 5th level, and every time you gain a character level above this, you may spend an action point to alter the creature type you can turn, rebuke, or command. One Ecclesiarch may choose to affect fey, while another may affect constructs, and a third may choose to affect dragons. The new creature type replaces that of the previous one, and all limitations to the previous power apply (if you could not bolster the previous creature type, you cannot bolster the new creature type). Certain types of creatures have restrictions on how they may be affected.
+
+#-----------------------
+# Holy Unholy Knight
+#-----------------------
+
+###Block:Holy Unholy Knight
+# Ability Name		Unique Key					Category of Ability		Type					Define								Description																											Ability								Save bonus						Modify VAR																												Benefits
+Divine Grace		KEY:Holy Unholy Knight ~ Divine Grace		CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural									DESC:You apply your Charisma modifier (if positive) as a bonus on all saving throws.																										BONUS:SAVE|Fortitude,Reflex,Will|CHA|PRESTAT:1,CHA=12																														BENEFIT:You apply your Charisma modifier (if positive) as a bonus on all saving throws.
+Sense Allegiance	KEY:Holy Unholy Knight ~ Sense Allegiance	CATEGORY:Special Ability	TYPE:SpecialQuality											DESC:You can sense the presence of characters, creatures, and items of both your chosen allegiance, and your opposing allegiance in a 60-foot radius around you. Pinpoint more finely with a successful Search check (DC 25).																																													BENEFIT:You can sense the presence of characters, creatures, and items of both your chosen allegiance, and your opposing allegiance (an Holy Knight has good as a chosen allegiance, and evil as an opposing allegiance, while an Unholy Knight has the reverse). The sense allegiance ability extends in a 60-foot radius around the Knight, but may be concentrated to a quarter circle emanating forward from the Knight. You can pinpoint allegiance more finely with a successful Search check (DC 25).
+Smite Allegiance	KEY:Holy Unholy Knight ~ Smite Allegiance	CATEGORY:Special Ability	TYPE:SpecialQuality											DESC:You can smite characters, creatures, or items of opposing allegiance with a single melee attack.																																																												BENEFIT:You can smite characters, creatures, or items of opposing allegiance with a single melee attack (a Holy Knight has evil as an opposing allegiance, an Unholy Knight has good as an opposing allegiance). You spend an action point and, in addition to the normal benefit of the action point, gain a bonus to the attack equal to your Charisma modifier (if positive) and deal 1 extra point of damage per character level (your character level, not the target's). Should the attack miss, the action point is expended. Similarly, the action point is expended if you use it and strike a target that does not have an opposing allegiance. Smite allegiance is considered a supernatural ability.
+Divine Touch		KEY:Holy Unholy Knight ~ Divine Touch		CATEGORY:Special Ability	TYPE:SpecialQuality											DESC:You can channel divine energy through your body and apply it directly to yourself or another character.																																																											BENEFIT:you can channel divine energy through your body and apply it directly to yourself or another character. With this ability you can restore lost hit points with a single touch; you may also choose to deal holy damage to a target with a simple a touch attack. Each day you may cure or deal a number of points of damage equal to your Charisma bonus times your total character level. A Holy Knight is not limited to curing wounds, nor is an Unholy Knight restricted to inflicting them. It is possible to combine this ability with smite allegiance to increase the amount of damage dealt by a touch attack. Massive damage rules apply. Use of this ability may be guided by the your allegiance, and widespread abuse may cause the you to lose your chosen allegiance.
+Turn Undead		KEY:Holy Unholy Knight ~ Turn Undead		CATEGORY:Special Ability	TYPE:SpecialQuality			DEFINE:ExtraTurningQual|0	DEFINE:ImprovedTurningQual|0	DESC:You can turn undead in the same manner as an Acolyte.																					ABILITY:Special Ability|AUTOMATIC|Base Turn|Turn/Rebuke Undead								BONUS:VAR|ExtraTurningQual|1	BONUS:VAR|ImprovedTurningQual|1	BONUS:VAR|TurnCheck|CHA|TYPE=Stat	BONUS:VAR|TurnDamagePlus|HolyUnholyKnightLVL	BONUS:VAR|TurnLevel|HolyUnholyKnightLVL	BONUS:VAR|TurnTimes|3+CHA|TYPE=Stat	BENEFIT:You can turn undead in the same manner as an Acolyte. A Holy Knight affects undead in the same manner as an Acolyte with good allegiance (turning or destroying undead), while an Unholy Knight affects undead in the same manner as an Acolyte with evil allegiance (rebuking or commanding them). Count all Holy/Unholy Knight and Acolyte levels when determining level for purposes of turning.
 
 
-#Block:Ecclesiarch ---------------------------------------------------------------------------------------------------------------------------------
-# Ability Name		Unique Key						Category of Ability		Type				Visible	Special ABility																																							Define							Caster level
-Total Spellcasting	KEY:Ecclesiarch ~ Total Spellcasting	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Total Spellcasting																																														BONUS:CASTERLEVEL|Acolyte|CL=Mystic+CL=Holy Unholy Knight|PRECLASS:1,Acolyte=1	BONUS:CASTERLEVEL|Mystic|CL=Acolyte+CL=Holy Unholy Knight|PRECLASS:1,Mystic=1	BONUS:CASTERLEVEL|Holy Unholy Knight|CL=Acolyte+CL=Mystic|PRECLASS:1,Holy Unholy Knight=1
-Increased Spells		KEY:Ecclesiarch ~ Increased Spells		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Increased Spells/Day (base number of divine spells increase by 1/2 round down)|PREVAREQ:IncreasedSpellsEcclesiarchProgression,1	SAB:Increased Spells/Day (double base number of divine spells)|PREVAREQ:IncreasedSpellsEcclesiarchProgression,2	DEFINE:IncreasedSpellsEcclesiarchProgression|0
-Total Turning		KEY:Ecclesiarch ~ Total Turning		CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Total Turning
-Innovative Turning	KEY:Ecclesiarch ~ Innovative Turning	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Innovative Turning
+########################
+# Organizations
+########################
 
-
-#Block:Holy Unholy Knight ---------------------------------------------------------------------------------------------------------------------------------
-# Ability Name	Unique Key						Category of Ability		Type				Visible	Special ABility		Save bonus
-Divine Grace	KEY:Holy Unholy Knight ~ Divine Grace	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Divine Grace		BONUS:SAVE|Fortitude,Reflex,Will|CHA|PRESTAT:1,CHA=12
-Sense Allegiance	KEY:Holy Unholy Knight ~ Sense Allegiance	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Sense Allegiance
-Smite Allegiance	KEY:Holy Unholy Knight ~ Smite Allegiance	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Smite Allegiance
-Divine Touch	KEY:Holy Unholy Knight ~ Divine Touch	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:NO	SAB:Divine Touch
-
-
-###Block: Organizations --------------------------------------------------------
-# Ability Name									Unique Key													Category of Ability		Type				Required Race	Special ABility																																															Description
-Member of The Black Feathers							KEY:Organisation ~ Member of The Black Feathers							CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Member of The Black Feathers (Find a supply of potions, poultices or poisons)																																				DESC:Find a supply of potions, poultices or poisons
-Member of Cirque des Moitie							KEY:Organisation ~ Member of Cirque des Moitie							CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Member of Cirque des Moitie
-Member of the Commission for Research Into Unexplained Phenomena	KEY:Organisation ~ Member of the Commission for Research Into Unexplained Phenomena	CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Member of the Commission for Research Into Unexplained Phenomena	SAB:Access to C.R.U.P. Archives																																DESC:Access to C.R.U.P. Archives
-Agent of Department 7								KEY:Organisation ~ Agent of Department 7								CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Agent of Department 7
-Member of The Displaced								KEY:Organisation ~ Member of The Displaced							CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Member of The Displaced	SAB:Requisitioning checks with The Displaced are at a -3 penalty	SAB:Access to The Displaced community outreach services																								DESC:Requisitioning checks with The Displaced are at a -3 penalty. Access to The Displaced community outreach services
-Employee of Draco Industries							KEY:Organisation ~ Employee of Draco Industries							CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Employee of Draco Industries	SAB:Requisitioning checks with Draco Industries may get a bonus of up to +15 if the employee manages to get Franz Draco's personal attention or works on a project which he takes particular interest in										DESC:Requisitioning checks with Draco Industries may get a bonus of up to +15 if the employee manages to get Franz Draco's personal attention or works on a project which he takes particular interest in
-Member of The Enlightenment							KEY:Organisation ~ Member of The Enlightenment							CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Member of The Enlightenment	SAB:Requisitioning checks with The Enlightenment get a +7 or better bonus																															DESC:Requisitioning checks with The Enlightenment get a +7 or better bonus
-Agent of the Fellowship								KEY:Organisation ~ Agent of the Fellowship							CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Agent of the Fellowship
-Member of the Fraternal Order of Vigilance				KEY:Organisation ~ Member of the Fraternal Order of Vigilance				CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Member of the Fraternal Order of Vigilance	SAB:F.O.V. provides no bonus to level checks for requisitioning materials, but complete support of other lodge members																						DESC:F.O.V. provides no bonus to level checks for requisitioning materials, but complete support of other lodge members
-Instructor of the Institute for Continuous Education			KEY:Organisation ~ Instructor of the Institute for Continuous Education			CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Instructor of the Institute for Continuous Education	SAB:Requisitioning checks with the Institute for Continuous Education receive a +2 bonus if they are valid requests or a -5 penalty if they are frivolous														DESC:Requisitioning checks with the Institute for Continuous Education receive a +2 bonus if they are valid requests or a -5 penalty if they are frivolous
-Member of the International Guild of Laborers				KEY:Organisation ~ Member of the International Guild of Laborers				CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Member of the International Guild of Laborers	SAB:International Guild of Laborers (takes a DC 10 Wealth check once per year to pay the annual dues)																								DESC:Takes a DC 10 Wealth check once per year to pay the annual dues
-Monk of the Knightly Order of St. Bartholomew				KEY:Organisation ~ Monk of the Knightly Order of St. Bartholomew				CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Monk of the Knightly Order of St. Bartholomew	SAB:The Black Library: cooperation of one monastery provides a +3 insight bonus on Knowledge (arcane lore) or Research checks pertaining to appropriate subjects. For each subsequent monastery that agrees to cooperate, raise the bonus by +2	DESC:The Black Library: cooperation of one monastery provides a +3 insight bonus on Knowledge (arcane lore) or Research checks pertaining to appropriate subjects. For each subsequent monastery that agrees to cooperate, raise the bonus by +2
-Journalist of Markova Enterprises, Intl.					KEY:Organisation ~ Journalist of Markova Enterprises Intl					CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Journalist of Markova Enterprises, Intl.	SAB:Use of Markova Enterprises morgue provides a +10 equipment bonus on all Research and Knowledge checks (for any Knowledge category, see text for required searching times)													DESC:Use of Markova Enterprises morgue provides a +10 equipment bonus on all Research and Knowledge checks (for any Knowledge category, see text for required searching times)
-Member of the Mindwreckers							KEY:Organisation ~ Member of the Mindwreckers							CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Member of the Mindwreckers
-Agent of the Paranormal Science and Investigation Agency		KEY:Organisation ~ Agent of the Paranormal Science and Investigation Agency		CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Agent of the Paranormal Science and Investigation Agency
-Employee of the Prancing Pony							KEY:Organisation ~ Employee of the Prancing Pony						CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Employee of the Prancing Pony (this organization offers nothing more than minimum-wage jobs [meals included])																															DESC:this organization offers nothing more than minimum-wage jobs [meals included]
-Member of the Silent Walkers							KEY:Organisation ~ Member of the Silent Walkers							CATEGORY:Special Ability	TYPE:SpecialQuality				SAB:Member of the Silent Walkers (members may not requisition any equipment, but the organization does provide all necessities for its members)																										DESC:Members may not requisition any equipment, but the organization does provide all necessities for its members
-Member of the Swiss Juncture of Gnomes					KEY:Organisation ~ Member of the Swiss Juncture of Gnomes					CATEGORY:Special Ability	TYPE:SpecialQuality	PRERACE:1,Gnome	SAB:Member of the Swiss Juncture of Gnomes	SAB:Access to a Swiss Juncture of Gnomes workshop																																	DESC:Access to a Swiss Juncture of Gnomes workshop
+###Block: Organizations
+# Ability Name								Unique Key										Category of Ability		Type			Required Race	Special ABility																																				Description
+Member of The Black Feathers						KEY:Organisation ~ Member of The Black Feathers						CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Member of The Black Feathers (Find a supply of potions, poultices or poisons)																											DESC:Find a supply of potions, poultices or poisons
+Member of Cirque des Moitie						KEY:Organisation ~ Member of Cirque des Moitie						CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Member of Cirque des Moitie
+Member of the Commission for Research Into Unexplained Phenomena	KEY:Organisation ~ Member of the Commission for Research Into Unexplained Phenomena	CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Member of the Commission for Research Into Unexplained Phenomena	SAB:Access to C.R.U.P. Archives																									DESC:Access to C.R.U.P. Archives
+Agent of Department 7							KEY:Organisation ~ Agent of Department 7						CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Agent of Department 7
+Member of The Displaced							KEY:Organisation ~ Member of The Displaced						CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Member of The Displaced	SAB:Requisitioning checks with The Displaced are at a -3 penalty	SAB:Access to The Displaced community outreach services																		DESC:Requisitioning checks with The Displaced are at a -3 penalty. Access to The Displaced community outreach services
+Employee of Draco Industries						KEY:Organisation ~ Employee of Draco Industries						CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Employee of Draco Industries	SAB:Requisitioning checks with Draco Industries may get a bonus of up to +15 if the employee manages to get Franz Draco's personal attention or works on a project which he takes particular interest in							DESC:Requisitioning checks with Draco Industries may get a bonus of up to +15 if the employee manages to get Franz Draco's personal attention or works on a project which he takes particular interest in
+Member of The Enlightenment						KEY:Organisation ~ Member of The Enlightenment						CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Member of The Enlightenment	SAB:Requisitioning checks with The Enlightenment get a +7 or better bonus																								DESC:Requisitioning checks with The Enlightenment get a +7 or better bonus
+Agent of the Fellowship							KEY:Organisation ~ Agent of the Fellowship						CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Agent of the Fellowship
+Member of the Fraternal Order of Vigilance				KEY:Organisation ~ Member of the Fraternal Order of Vigilance				CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Member of the Fraternal Order of Vigilance	SAB:F.O.V. provides no bonus to level checks for requisitioning materials, but complete support of other lodge members																	DESC:F.O.V. provides no bonus to level checks for requisitioning materials, but complete support of other lodge members
+Instructor of the Institute for Continuous Education			KEY:Organisation ~ Instructor of the Institute for Continuous Education			CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Instructor of the Institute for Continuous Education	SAB:Requisitioning checks with the Institute for Continuous Education receive a +2 bonus if they are valid requests or a -5 penalty if they are frivolous										DESC:Requisitioning checks with the Institute for Continuous Education receive a +2 bonus if they are valid requests or a -5 penalty if they are frivolous
+Member of the International Guild of Laborers				KEY:Organisation ~ Member of the International Guild of Laborers			CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Member of the International Guild of Laborers	SAB:International Guild of Laborers (takes a DC 10 Wealth check once per year to pay the annual dues)																		DESC:Takes a DC 10 Wealth check once per year to pay the annual dues
+Monk of the Knightly Order of St. Bartholomew				KEY:Organisation ~ Monk of the Knightly Order of St. Bartholomew			CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Monk of the Knightly Order of St. Bartholomew	SAB:The Black Library: cooperation of one monastery provides a +3 insight bonus on Knowledge (arcane lore) or Research checks pertaining to appropriate subjects. For each subsequent monastery that agrees to cooperate, raise the bonus by +2	DESC:The Black Library: cooperation of one monastery provides a +3 insight bonus on Knowledge (arcane lore) or Research checks pertaining to appropriate subjects. For each subsequent monastery that agrees to cooperate, raise the bonus by +2
+Journalist of Markova Enterprises, Intl.				KEY:Organisation ~ Journalist of Markova Enterprises Intl				CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Journalist of Markova Enterprises, Intl.	SAB:Use of Markova Enterprises morgue provides a +10 equipment bonus on all Research and Knowledge checks (for any Knowledge category, see text for required searching times)										DESC:Use of Markova Enterprises morgue provides a +10 equipment bonus on all Research and Knowledge checks (for any Knowledge category, see text for required searching times)
+Member of the Mindwreckers						KEY:Organisation ~ Member of the Mindwreckers						CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Member of the Mindwreckers
+Agent of the Paranormal Science and Investigation Agency		KEY:Organisation ~ Agent of the Paranormal Science and Investigation Agency		CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Agent of the Paranormal Science and Investigation Agency
+Employee of the Prancing Pony						KEY:Organisation ~ Employee of the Prancing Pony					CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Employee of the Prancing Pony (this organization offers nothing more than minimum-wage jobs [meals included])																							DESC:this organization offers nothing more than minimum-wage jobs [meals included]
+Member of the Silent Walkers						KEY:Organisation ~ Member of the Silent Walkers						CATEGORY:Special Ability	TYPE:SpecialQuality			SAB:Member of the Silent Walkers (members may not requisition any equipment, but the organization does provide all necessities for its members)																				DESC:Members may not requisition any equipment, but the organization does provide all necessities for its members
+Member of the Swiss Juncture of Gnomes					KEY:Organisation ~ Member of the Swiss Juncture of Gnomes				CATEGORY:Special Ability	TYPE:SpecialQuality	PRERACE:1,Gnome	SAB:Member of the Swiss Juncture of Gnomes	SAB:Access to a Swiss Juncture of Gnomes workshop																									DESC:Access to a Swiss Juncture of Gnomes workshop
 
 
 ###EOF
