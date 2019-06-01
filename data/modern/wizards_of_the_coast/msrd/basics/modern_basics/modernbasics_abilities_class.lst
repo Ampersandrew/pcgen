@@ -56,19 +56,6 @@ Web Access Spells	CATEGORY:Special Ability	TYPE:VirtualPossession	VISIBLE:NO	SAB
 
 
 #----------------------------------------------
-#  Artificer Craft Artifice Abilities
-#----------------------------------------------
-
-###Block: Artificer Craft Artifice Abilities
-# Ability Name		Category of Ability		Type			Visible		Required Skill						Special ABility
-Craft Wand		CATEGORY:Special Ability	TYPE:CraftArtifice	VISIBLE:NO	PRESKILL:1,Craft (Mechanical)=1				SAB:Craft Wand
-Improved Brew Potion	CATEGORY:Special Ability	TYPE:CraftArtifice	VISIBLE:NO	PRESKILL:1,Craft (Chemical)=1				SAB:Improved Brew Potion
-Improved Scribe Scroll	CATEGORY:Special Ability	TYPE:CraftArtifice	VISIBLE:NO	PRESKILL:1,Craft (Writing)=1				SAB:Improved Scribe Scroll
-Improved Scribe Tattoo	CATEGORY:Special Ability	TYPE:CraftArtifice	VISIBLE:NO	PRESKILL:1,Craft (Visual Art)=1				SAB:Improved Scribe Tattoo
-Magic Mastercraft	CATEGORY:Special Ability	TYPE:CraftArtifice	VISIBLE:NO	PRESKILL:2,Craft (Chemical)=1,Craft (Mechanical)=1	SAB:Magic Mastercraft
-
-
-#----------------------------------------------
 #  All Proficiencies (for referencing)
 #----------------------------------------------
 

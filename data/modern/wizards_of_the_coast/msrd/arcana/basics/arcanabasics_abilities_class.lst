@@ -27,6 +27,19 @@ Quick Weapon Draw	KEY:Archaic Weaponsmaster ~ Quick Weapon Draw		CATEGORY:Specia
 Weapon Stun		KEY:Archaic Weaponsmaster ~ Weapon Stun			CATEGORY:Special Ability	TYPE:SpecialQuality.Archaic Weaponsmaster Class Feature.Class Feature					DESC:Deal nonlethal damage with any weapon for which you have weapon specialisation, without taking the -4 penalty on attack rolls.																																			BENEFIT:At 7th level, the Archaic Weaponsmaster can use his or her weapon to deal nonlethal damage, without taking the -4 penalty on attack rolls. The Archaic Weaponsmaster must have Weapon Specialization in the weapon to use it in this fashion.
 
 
+#----------------------------------------------
+#  Artificer Craft Artifice Abilities
+#----------------------------------------------
+
+###Block: Artificer Craft Artifice Abilities
+# Ability Name		Category of Ability		Type			Visible		Required Skill						Special ABility
+Craft Wand		CATEGORY:Special Ability	TYPE:CraftArtifice	VISIBLE:NO	PRESKILL:1,Craft (Mechanical)=1				SAB:Craft Wand
+Improved Brew Potion	CATEGORY:Special Ability	TYPE:CraftArtifice	VISIBLE:NO	PRESKILL:1,Craft (Chemical)=1				SAB:Improved Brew Potion
+Improved Scribe Scroll	CATEGORY:Special Ability	TYPE:CraftArtifice	VISIBLE:NO	PRESKILL:1,Craft (Writing)=1				SAB:Improved Scribe Scroll
+Improved Scribe Tattoo	CATEGORY:Special Ability	TYPE:CraftArtifice	VISIBLE:NO	PRESKILL:1,Craft (Visual Art)=1				SAB:Improved Scribe Tattoo
+Magic Mastercraft	CATEGORY:Special Ability	TYPE:CraftArtifice	VISIBLE:NO	PRESKILL:2,Craft (Chemical)=1,Craft (Mechanical)=1	SAB:Magic Mastercraft
+
+
 #-----------------------
 # Glamourist
 #-----------------------

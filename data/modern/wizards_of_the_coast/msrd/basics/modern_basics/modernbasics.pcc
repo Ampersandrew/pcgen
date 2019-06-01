@@ -42,6 +42,7 @@ ABILITY:modernbasics_abilities_occupations.lst
 ABILITY:modernbasics_abilities_talents.lst
 ABILITY:modernbasics_abilities_racial.lst
 ABILITY:modernbasics_abilities_class.lst
+ABILITY:modernbasics_abilities_shared_fx.lst
 
 CLASS:modernbasics_classes_pc.lst
 CLASS:modernbasics_classes_npc.lst
